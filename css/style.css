@@ -839,7 +839,7 @@ a:focus {
 .contact-section .form-input,
 .contact-section .form-textarea {
   padding: 0.5rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid black;
   display: flex;
   height: 2.5rem;
   width: 100%;
