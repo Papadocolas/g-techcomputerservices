@@ -34,14 +34,14 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <!--<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
   -->
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-
   <script>
     window.onload = function() {
         // Reset the form fields when the page loads
         document.getElementById("form").reset();
     };
   </script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="./script.js" defer></script>
 </head>
 
 <body class="sub_page">
@@ -146,8 +146,33 @@
     data-sitekey="917a7ffa-1f5c-4abe-91a6-4a52da7eebd8"
     ></div>
     -->
-    <div class="g-recaptcha" id="rcaptcha"  data-sitekey="6LcFhTAqAAAAAINhnprgEqUKgwd8zKdeueI0gHAV"></div>
-    <span id="captcha" style="color:red" /></span> <!-- this will show captcha errors -->
+    <div
+      class="g-recaptcha"
+      data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+      data-callback="onRecaptchaSuccess"
+      data-expired-callback="onRecaptchaResponseExpiry"
+      data-error-callback="onRecaptchaError"
+    >
+    </div>
+
+          <!-- Recaptcha Error -->
+    <div
+        id="recaptcha-form-error"
+        style="display: none"
+        class="bg-red-200 rounded py-1 px-2 text-sm sm:text-md"
+    >
+        Please fill the recaptcha checkbox.
+    </div>
+
+      <!-- Recaptcha Success -->
+    <div
+        id="recaptcha-form-success"
+        style="display: none"
+        class="bg-green-200 rounded py-1 px-2 text-sm sm:text-md"
+    >
+        Recaptcha validated Successfully..!
+        <a href="/" class="px-2 text-slate-800">Retry</a>
+    </div>
 
     <button class="form-submit" type="submit">Send Message</button>
   </form>
