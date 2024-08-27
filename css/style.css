@@ -881,7 +881,7 @@ a:focus {
 }
 
 .contact-section input:valid {
-  border: 2px solid black;
+  border: 2px solid grey;
 }
 
 /* contact section end */
