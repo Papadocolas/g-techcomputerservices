@@ -861,6 +861,7 @@ a:focus {
 
 .contact-section .form-textarea {
   min-height: 120px;
+  border: 2px solid black;
 }
 
 .contact-section .form-submit {
@@ -881,8 +882,9 @@ a:focus {
 }
 
 .contact-section input:valid {
-  border: 2px solid grey;
+  border: 2px solid black;
 }
+
 
 /* contact section end */
 
