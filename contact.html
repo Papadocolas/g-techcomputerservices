@@ -34,6 +34,25 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <!--<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
   -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  
+  <script>
+  function get_action(form) 
+  {
+      var v = grecaptcha.getResponse();
+      if(v.length == 0)
+      {
+          document.getElementById('captcha').innerHTML="You can't leave Captcha Response empty";
+          return false;
+      }
+      else
+      {
+           document.getElementById('captcha').innerHTML="Captcha completed";
+          return true; 
+      }
+  }
+  </script>
+  
   <script>
     window.onload = function() {
         // Reset the form fields when the page loads
@@ -144,6 +163,9 @@
     data-sitekey="917a7ffa-1f5c-4abe-91a6-4a52da7eebd8"
     ></div>
     -->
+    <div class="g-recaptcha" id="rcaptcha"  data-sitekey="6LcFhTAqAAAAAINhnprgEqUKgwd8zKdeueI0gHAV"></div>
+    <span id="captcha" style="color:red" /></span> <!-- this will show captcha errors -->
+
     <button class="form-submit" type="submit">Send Message</button>
   </form>
 
