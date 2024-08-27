@@ -17,6 +17,12 @@ form.addEventListener('submit', (e) => {
                         body: params,
                       }) 
                       .then(res => res.json())
-                      .then(data => console.log(data))
+                      .then(data => {
+                          if (data.captchaSuccess) {
+                            console.log("Validation Successful")
+                          }
+                          else {
+                            console.log("Validation Failed")
+                          }
                       .catch(err => console.error(err))
 });
