@@ -876,6 +876,14 @@ a:focus {
   background-color: #3f5c4d;
 }
 
+.contact-section input:invalid {
+  border: 2px dashed red;
+}
+
+.contact-section input:valid {
+  border: 2px solid black;
+}
+
 /* contact section end */
 
 
