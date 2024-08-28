@@ -679,6 +679,7 @@ a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: center;
+          align-content: space-between;
 }
 
 .team_section .team_container .box .social_box a {
