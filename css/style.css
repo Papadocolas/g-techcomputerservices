@@ -678,7 +678,6 @@ a:focus {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: center;
           justify-content: space-between;
 }
 
