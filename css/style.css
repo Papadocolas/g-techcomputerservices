@@ -685,12 +685,6 @@ a:focus {
   color: #F2EBE6;
   font-size: 22px;
   position: relative;
-  right: 39%;
-}
-
-.team_section .team_container .box .social_box a span{
-  position: relative;
-  left: 1200%
 }
 
 .team_section .team_container .box .social_box a:hover {
