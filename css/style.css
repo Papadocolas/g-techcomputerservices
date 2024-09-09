@@ -509,7 +509,17 @@ a:focus {
   margin-top: 15px;
 }
 
-.about_section .detail-box a {
+.about_section .detail-box a{
+  color: #ABC4B6;
+}
+
+
+.about_section .detail-box a:hover {
+  color: #527562;
+}
+
+
+.about_section .detail-box a span{
   display: inline-block;
   padding: 10px 45px;
   background-color: #527562;
@@ -521,7 +531,8 @@ a:focus {
   margin-top: 15px;
 }
 
-.about_section .detail-box a:hover {
+
+.about_section .detail-box a:hover span{
   background-color: #3f5c4d;
 }
 
