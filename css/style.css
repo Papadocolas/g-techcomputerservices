@@ -421,15 +421,15 @@ a:focus {
 }
 
 .service_section .box .img-box {
-  display: -webkit-box;
+/*   display: -webkit-box;
   display: -ms-flexbox;
-/*  display: flex; */
+ display: flex; 
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
+          align-items: flex-start; */
   width: 175px;
   min-width: 75px;
   height: 125px;
